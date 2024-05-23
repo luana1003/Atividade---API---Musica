@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etec Songs</title>
+  <link rel="stylesheet" href="reset.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+  
+<body>
+  <!--HEADER-->
+  <header class="header">
+    <nav class="container">
+      <!--Menu hambúrguer (layout mobile)-->
+      <input type="checkbox" class="menu-checkbox" />
+      <div class="menu-lines">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+
+      <!--Itens do cabeçalho-->
+      <ul class="lista-menu">
+        <li class="lista-menu__item logo__nome__mobile">
+          <img src="assets/logo__mobile.png" class="header__container__logo"">
+          <p class = "nome__site__mobile">ETEC SONGS</p>
+        </li>
+        
+        <li class="lista-menu__item">
+          <a href="#about-us" class="lista-menu__link">Sobre nós</a>
+        </li>
+
+        <li class="lista-menu__item">
+          <a href="#importance" class="lista-menu__link">A importância da música</a>
+        </li>
+
+        <li class="lista-menu__item">
+          <a href="#artists" class="lista-menu__link">Os artistas</a>
+        </li>
+      </ul>
+    </nav>
+
+      <!-- NAVBAR DESKTOP-->
+      <nav class="header__navigation">
+        <div class = "logo__nome">
+          <img class="header__logo" src="assets/logo.png">
+          <h2 class="header__title">ETEC SONGS</h2>
+        </div>
+        
+        <ul class="header__navigation__list">
+          <li class="header__navigation__list__topics"><a href="#about-us">Sobre nós</a></li>
+          <li class="header__navigation__list__topics"><a href="#importance">A importância da música</a></li>
+          <li class="header__navigation__list__topics"><a href="#artists"">Os artistas</a></li>
+        </ul>
+      </nav>
+  </header>
+
+
+  <!--SEÇÃO PRINCIPAL-->
+  <main class="main">
+    <section class="main__section__home">
+      <h1 class="main__section__home__title">Conheça mais o mundo da música!</h1>
+      <a class="main__section__home__button" href = "#about-us">Saiba mais</a>
+    </section>
+
+
+    <!--SOBRE NÓS-->
+    <section class="main__section__about" id="about-us">
+      <div class="main__section__about__text">
+        <h2>SOBRE NÓS</h2>
+        <p>Organização, criada por João Victor Pedrosa Carvalho e Luana de Jesus Lima (3ºB), que busca evidenciar os benefícios da música, a ETEC Songs procura disponibilizar uma série de informações dos mais diversos artistas, a fim de que os alunos possam expandir seu repertório musical e descobrir novas perspectivas sobre a arte e o mundo. </p>
+      </div>
+      
+      <img class="main__section__about__image" src="assets/about-image.png">
+    </section>
+
+
+
+    <!--A IMPORTÂNCIA DA MÚSICA-->
+    <section class="main__section__importance" id="importance">
+      <img class="main__section__importance__image" src="assets/importance-image-mobile.png">
+      <div class="main__section__importance__text">
+        <h2>A IMPORTÂNCIA DA MÚSICA</h2>
+        <p>A música possui uma série de benefícios notáveis para os seres humanos. Isso se deve à ativação de diversas áreas cerebrais, causada pelas melodias, que, por conseguinte, estimulam diferentes sensações, emoções e movimentos, além de oferecer diversos ritmos para a execução de atividades recreativas, que melhoram a socialização coletiva. Portanto, nota-se a importância da música, seja para a melhoria de competência socioemocionais, seja como atividade cultural ou, até mesmo, entretenimento.</p>
+      </div>
+    </section>
+
+
+
+    <!--OS ARTISTAS-->
+    <section class="main__section__artists" id="artists">
+      <h2 class="main__section__artists__title">OS ARTISTAS</h2>
+      <div class="main__section__artists__search-artist">
+        <h3 class="main__section__artists__search-artist__title">Busque sobre os artistas que você mais ama!</h3>
+        <input class="main__section__artists__search-artist__input" type="text" placeholder="Nome" id="id_input">
+        <button id="search__button" class="main__section__artists__search-artist__button">Pesquisar</button>
+      </div>
+
+      <div id="main__section__artists__area">
+        <img id="foto__artista" src="" alt="Foto do Artista" style="display: none;">
+        <p id = "nome__artista"></p>
+      </div>
+    </section>
+  </main>
+
+
+
+
+  <!--FOOTER-->
+  <footer class="footer">
+    <div class="footer__container">
+      <img src="assets/logo.png" class="footer__container__logo"">
+      <p>ETEC SONGS</p>
+    </div>
+    <p>Copyright © 2024 ETEC SONGS. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="animacoes.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
